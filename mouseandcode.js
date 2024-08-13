@@ -15,6 +15,9 @@ const searchAndClickCustomExtrude2 = require('./components/searchAndClickCustomE
 const searchAndClickExtrude = require('./components/searchAndClickExtrude.js');
 const selectCancelButton = require('./components/selectCancelButton.js');
 const selectOkButton = require('./components/selectOkButton.js');
+//////////////////
+const ExtensionLeft = require('./components/ExtensionLeft.js');
+/////////////////
 const assemblySelectButton = require('./components/assemblySelectButton.js');
 const { performRightClickOptionByTitle } = require('./components/performRightClickOptionByTitle.js');
 const waitForEnter = require('./components/waitForEnter.js');

@@ -1,4 +1,4 @@
-// SELECT OK TO CLICK OR UNCLICK, THIS CODE IS REALLY IMPORTANT
+// SELECT OK TO CLICK OR UNCLICK
 async function selectOkButton(newPage) {
     console.log("selectOkButton");
 

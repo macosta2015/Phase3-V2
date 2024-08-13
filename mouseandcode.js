@@ -31,6 +31,24 @@ require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum numb
         const newPage = await launchBrowserAndNavigateToDocument(); // Ensure this returns a newPage object
 
 
+
+
+
+
+        //////////////////
+        console.log("ExtensionLeft ");
+        console.log(''); // This logs an empty line, effectively skipping a line
+        await waitForEnter();
+        await ExtensionLeft(newPage);
+        console.log("ExtensionLeft");
+        //////////////////
+
+
+
+
+
+
+
         //Working on (2) Extrude 1(4.00)
         ////////////////////////////////////////////////////////////////////////////
         const selector = 'div[data-id="XgmGAQ7RqnVg1wa8"]'; // Replace with the appropriate selector

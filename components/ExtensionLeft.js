@@ -1,6 +1,6 @@
 // SELECT ExtensionLeft TO CLICK OR UNCLICK
 async function ExtensionLeft(newPage) {
-    console.log("ExtensionLeft");
+    console.log("ExtensionLeft function");
 
     await newPage.evaluate(() => {
         // Selector to find the tab-list-item element based on the data-id attribute
@@ -12,7 +12,7 @@ async function ExtensionLeft(newPage) {
             // Scroll the element into view smoothly and centered
             tabItem.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
         } else {
-            console.error('Tab item not found.');
+            console.error('ExtensionLeft not found.');
         }
     });
 }

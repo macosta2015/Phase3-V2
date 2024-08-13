@@ -15,13 +15,16 @@ const searchAndClickCustomExtrude2 = require('./components/searchAndClickCustomE
 const searchAndClickExtrude = require('./components/searchAndClickExtrude.js');
 const selectCancelButton = require('./components/selectCancelButton.js');
 const selectOkButton = require('./components/selectOkButton.js');
-//////////////////
-const ExtensionLeft = require('./components/ExtensionLeft.js');
-/////////////////
 const assemblySelectButton = require('./components/assemblySelectButton.js');
 const { performRightClickOptionByTitle } = require('./components/performRightClickOptionByTitle.js');
 const waitForEnter = require('./components/waitForEnter.js');
 require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum number of listeners
+
+
+
+//////////////////
+const ExtensionLeft = require('./components/ExtensionLeft.js');  // Ensure the path is correct
+/////////////////
 
 
 (async () => {
@@ -32,20 +35,15 @@ require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum numb
 
 
 
-
-
-
         //////////////////
         console.log("ExtensionLeft ");
         console.log(''); // This logs an empty line, effectively skipping a line
         await waitForEnter();
         await ExtensionLeft(newPage);
         console.log("ExtensionLeft");
+        await waitForEnter();
+
         //////////////////
-
-
-
-
 
 
 
